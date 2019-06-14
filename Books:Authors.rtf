@@ -1,0 +1,154 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red209\green113\blue37;\red57\green164\blue40;
+\red55\green239\blue32;\red202\green51\blue35;\red57\green192\blue38;\red56\green185\blue199;\red86\green32\blue244;
+\red184\green51\blue37;\red252\green50\blue32;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c85991\c52029\c18734;\cssrgb\c26425\c68732\c20500;
+\cssrgb\c22317\c93015\c16432;\cssrgb\c83898\c28665\c18024;\cssrgb\c25704\c77963\c19556;\cssrgb\c25544\c77008\c82022;\cssrgb\c41680\c25960\c96645;
+\cssrgb\c77738\c28163\c18923;\cssrgb\c100000\c29541\c16201;}
+\margl1440\margr1440\vieww16400\viewh21000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs72 \cf0 Books/Authors\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \CocoaLigature0 Book.objects.create(title=\cf3 'C Sharp'\cf2 )\
+Book.objects.create(title=\cf3 \'91Java\'92\cf2 )\
+Book.objects.create(title=\cf3 \'91Python\'92\cf2 )\
+Book.objects.create(title=\cf3 \'91PHP\'92\cf2 )\
+Book.objects.create(title=\cf3 \'91Ruby\'92\cf2 )\
+\
+\
+Author.objects.create(first_name=\cf3 'Jane'\cf2 , last_name=\cf3 'Austen'\cf2 )\
+Author.objects.create(first_name=\cf3 'Emily'\cf2 , last_name=\cf3 'Dickinson'\cf2 )                    \
+Author.objects.create(first_name=\cf3 'Fyodor'\cf2 , last_name=\cf3 'Dostoevksy'\cf2 )\
+Author.objects.create(first_name=\cf3 'William'\cf2 , last_name=\cf3 'Shakespeare'\cf2 )\
+Author.objects.create(first_name=\cf3 'Lau'\cf2 , last_name=\cf3 'Tzu'\cf2 )\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf2 bookone = Book.objects.get(\cf4 id\cf2 =\cf4 1\cf2 )\
+bookone.title = \cf3 'C #'\
+\cf2 author4 = Author.objects.get(\cf4 id\cf2 =\cf4 4\cf2 )\
+author4.first_name = \cf3 'Bill'\
+\cf2 author4.first_name = \cf3 'Bill'\cf2                                                                                    \
+\
+\cf4 In [
+\f2\b \cf5 9
+\f1\b0 \cf4 ]: \cf2 book1 = Book.objects.get(\cf4 id\cf2 =\cf4 1\cf2 )                                                                                \
+\
+\cf4 In [
+\f2\b \cf5 10
+\f1\b0 \cf4 ]: \cf2 book2 = Book.objects.get(\cf4 id\cf2 =\cf4 2\cf2 )                                                                               \
+\
+\cf4 In [
+\f2\b \cf5 11
+\f1\b0 \cf4 ]: \cf2 author1 = Author.objects.get(\cf4 id\cf2 =\cf4 1\cf2 )                                                                           \
+\
+\cf4 In [
+\f2\b \cf5 12
+\f1\b0 \cf4 ]: \cf2 author1.books.add(book1)                                                                                     \
+\
+\cf4 In [
+\f2\b \cf5 13
+\f1\b0 \cf4 ]: \cf2 author1.books.add(book2)\
+\cf4 In [
+\f2\b \cf5 14
+\f1\b0 \cf4 ]: \cf2 book3 = Book.objects.get(\cf4 id\cf2 =\cf4 3\cf2 )                                                                               \
+\
+\cf4 In [
+\f2\b \cf5 15
+\f1\b0 \cf4 ]: \cf2 author2 = Author.objects.get(\cf4 id\cf2 =\cf4 2\cf2 )                                                                           \
+\
+\cf4 In [
+\f2\b \cf5 16
+\f1\b0 \cf4 ]: \cf2 author2.books.add(book1, book2, book3)                                                                       \
+\
+\cf4 In [
+\f2\b \cf5 17
+\f1\b0 \cf4 ]: \cf2 author3 = Author.objects.get(\cf4 id\cf2 =\cf4 3\cf2 )                                                                           \
+\
+\cf4 In [
+\f2\b \cf5 18
+\f1\b0 \cf4 ]: \cf2 author4 = Author.objects.get(\cf4 id\cf2 =\cf4 4\cf2 )                                                                           \
+\
+\cf4 In [
+\f2\b \cf5 19
+\f1\b0 \cf4 ]: \cf2 book4 = Book.objects.get(\cf4 id\cf2 =\cf4 4\cf2 )                                                                               \
+\
+\cf4 In [
+\f2\b \cf5 20
+\f1\b0 \cf4 ]: \cf2 author3.books.add(book1, book2, book3, book4)                                                                \
+\
+\cf4 In [
+\f2\b \cf5 21
+\f1\b0 \cf4 ]: \cf2 book5 = Book.objects.get(\cf4 id\cf2 =\cf4 5\cf2 )                                                                               \
+\
+\cf4 In [
+\f2\b \cf5 22
+\f1\b0 \cf4 ]: \cf2 author4.books.add(book1, book2, book3, book4, book5)                                                         \
+\
+\cf4 In [
+\f2\b \cf5 23
+\f1\b0 \cf4 ]: \cf2 book3.Author.all()                                                                                           \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 AttributeError\cf2                             Traceback (most recent call last)\
+\cf7 <ipython-input-23-42311a4ace9b>\cf2  in \cf8 <module>\cf2 \
+\cf7 ----> 1\cf6  \cf2 book3\cf9 .\cf2 Author\cf9 .\cf2 all\cf9 ()\cf2 \
+\
+\cf6 AttributeError\cf2 : 'Book' object has no attribute 'Author'\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 In [
+\f2\b \cf5 24
+\f1\b0 \cf4 ]: \cf2 book3.authors.all()                                                                                          \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf10 Out[
+\f2\b \cf11 24
+\f1\b0 \cf10 ]: \cf2 <QuerySet [<Author: Author object (2)>, <Author: Author object (3)>, <Author: Author object (4)>]>\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 In [
+\f2\b \cf5 25
+\f1\b0 \cf4 ]: \cf2 book3.authors.remove(author1)                                                                                \
+\
+\cf4 In [
+\f2\b \cf5 26
+\f1\b0 \cf4 ]: \cf2 book2.authors.add(author5)                                                                                   \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 NameError\cf2                                  Traceback (most recent call last)\
+\cf7 <ipython-input-26-c90f7939954e>\cf2  in \cf8 <module>\cf2 \
+\cf7 ----> 1\cf6  \cf2 book2\cf9 .\cf2 authors\cf9 .\cf2 add\cf9 (\cf2 author5\cf9 )\cf2 \
+\
+\cf6 NameError\cf2 : name 'author5' is not defined\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 In [
+\f2\b \cf5 27
+\f1\b0 \cf4 ]: \cf2 author5 = Author.objects.get(\cf4 id\cf2 =\cf4 5\cf2 )                                                                           \
+\
+\cf4 In [
+\f2\b \cf5 28
+\f1\b0 \cf4 ]: \cf2 book2.authors.add(author5)                                                                                   \
+\
+\cf4 In [
+\f2\b \cf5 29
+\f1\b0 \cf4 ]: \cf2 author3.books.all()                                                                                          \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf10 Out[
+\f2\b \cf11 29
+\f1\b0 \cf10 ]: \cf2 <QuerySet [<Book: Book object (1)>, <Book: Book object (2)>, <Book: Book object (3)>, <Book: Book object (4)>]>\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 In [
+\f2\b \cf5 30
+\f1\b0 \cf4 ]: \cf2 book5.authors.all()                                                                                          \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf10 Out[
+\f2\b \cf11 30
+\f1\b0 \cf10 ]: \cf2 <QuerySet [<Author: Author object (4)>]>}
